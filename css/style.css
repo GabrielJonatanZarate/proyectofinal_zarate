@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&family=Rubik+Burned&family=Sigmar&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+}
+
+h1 {
+   color: rgb(203, 0, 12);
+   font-family: "Sigmar", sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   border: 2px solid black;
+   margin: 15px;
+   background-image: linear-gradient(rgb(246, 249, 1), rgb(202, 108, 16));
+}
+
+.titulo {
+   background-color: yellow;
+   color: red;
+   font-family: "Sigmar", sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   border: 2px solid black;
+   margin: 15px;
+}
+
+
+section p {
+   color: rgba(255, 255, 0, 0.833);
+   font-family: "Sigmar", sans-serif;
+   font-size: 14px;
+   background-color: rgb(203, 0, 12);
+   text-align: center;
+   margin: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(10, 10, 10);
+}
+
+a:hover {
+   color: yellow;
+   transition: all .3s;
+}
+
+h2 {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article {
+   border: 2px solid black;
+   margin: 10px;
+   padding: 10px;
+}
+
+
+/* NAVEGACION */
+.navegacion {
+   background-image: url(https://i.pinimg.com/originals/82/c5/86/82c5865e1d0c1c7fa58a2cec54766b15.jpg);
+   background-size: cover;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navegacion img {
+   height: 250px;
+}
+
+.navegacion ul {
+   margin: auto;
+   margin-bottom: 0;
+   padding: 20px;
+   display: flex;
+   list-style: none;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgba(255, 228, 196, 0.275);
+   box-shadow: 6px 0px 20px 4px black;
+   background-image: radial-gradient(rgba(255, 255, 0, 0.467), rgba(255, 0, 0, 0.484));
+}
+
+.navegacion ul li {
+   margin: 0 80px;
+
+}
+
+.navegacion ul li:hover {
+   background-color: red;
+   text-decoration: underline;
+   transition: all .5s;
+}
+
+/* IMAGENES */
+.main__todasimg {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(8, 400px);
+   grid-template-areas:
+      "gokuimg"
+      "vegetaimg"
+      "gohanimg"
+      "piccoloimg"
+      "brolyimg"
+      "cellimg"
+      "freezerimg"
+      "majinbooimg"
+   ;
+   max-width: 1000px;
+   margin: auto;
+}
+
+.gokuimg {
+   grid-area: gokuimg;
+   background-image: url(../recursos/goku-transpa.png);
+   background-size: cover;
+   color: rgb(7, 31, 55);
+}
+
+.vegetaimg {
+   grid-area: vegetaimg;
+   background-image: url(../recursos/vegeta-transpa.webp);
+   background-size: cover;
+   color: rgb(2, 27, 63);
+}
+
+.gohanimg {
+   grid-area: gohanimg;
+   background-image: url(../recursos/gohan-transpa.webp);
+   background-size: cover;
+   color: rgb(174, 55, 177);
+}
+
+.piccoloimg {
+   grid-area: piccoloimg;
+   background-image: url(../recursos/picolo-inicio.jpg);
+   background-size: cover;
+   color: rgb(136, 195, 79);
+}
+
+.brolyimg {
+   grid-area: brolyimg;
+   background-image: url(../recursos/broly-transpa.png);
+   background-size: cover;
+   color: rgb(2, 2, 2);
+}
+
+.majinbooimg {
+   grid-area: majinbooimg;
+   background-image: url(../recursos/majinboo-transpa.webp);
+   background-size: cover;
+   color: rgb(240, 21, 120);
+}
+
+.cellimg {
+   grid-area: cellimg;
+   background-image: url(../recursos/cell-transpa.webp);
+   background-size: cover;
+   color: rgb(109, 154, 29);
+}
+
+.freezerimg {
+   grid-area: freezerimg;
+   background-image: url(../recursos/freezer-transpa.png);
+   background-size: cover;
+   color: rgb(130, 79, 169)
+}
+
+/* PAGINA DE GOKU */
+.ancho-650 {
+   max-width: 750px;
+   margin: auto;
+}
+
+/* PAGINA DE VEGETA */
+
+.todovegeta {
+   display: grid;
+   grid-template-columns: 2fr;
+   grid-template-rows: repeat(5, 500px);
+   grid-template-areas:
+      "vegeta-parado"
+      "vegeta-vs-goku"
+      "vegeta-vs-broly"
+      "vegeta-vs-cell"
+      "vegeta-vs-freezer"
+  
+   ;
+   max-width: 1000px;
+   margin: auto;
+}
+
+.vegeta-parado {
+   grid-area: vegeta-parado;
+   background-image: url(../recursos/vegeta-parado.webp);
+   background-size: cover;
+}
+
+.vegeta-vs-goku {
+   grid-area: vegeta-vs-goku;
+   background-image: url(../recursos/vegeta-vs-goku.webp);
+   background-size: cover;
+}
+
+.vegeta-vs-broly {
+   grid-area: vegeta-vs-broly;
+   background-image: url(../recursos/vegeta-vs-brolyjpg.jpg);
+   background-size: cover;
+}
+
+.vegeta-vs-cell {
+   grid-area: vegeta-vs-cell;
+   background-image: url(../recursos/vegeta-vs-cell.png);
+   background-size: cover;
+}
+
+.vegeta-vs-freezer {
+   grid-area: vegeta-vs-freezer;
+   background-image: url(../recursos/vegeta-vs-freezer.avif);
+   background-size: cover;
+}
+
+
+
+
+
+
+
+
+@media (min-width:400px) {
+   .navegacion ul {
+      width: 90%;
+      justify-content: center;
+   }
+}
+
+@media (min-width: 597px) {
+   .main__todasimg {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(8, 350px);
+      grid-template-areas:
+         "gokuimg gokuimg vegetaimg gohanimg"
+         "gokuimg gokuimg piccoloimg brolyimg"
+         "cellimg freezerimg freezerimg majinbooimg";
+   }
+}
+
+@media (min-width: 597px){
+      .todovegeta {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(3, 350px);
+         grid-template-areas:
+            "vegeta-vs-goku vegeta-parado vegeta-vs-broly"
+            "vegeta-vs-cell vegeta-parado vegeta-vs-freezer";
+      }
+      }
