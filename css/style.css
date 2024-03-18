@@ -49,6 +49,8 @@ a {
 a:hover {
    color: yellow;
    transition: all .3s;
+   /* transform: translate(0, 5px); */
+   transform: rotate(360deg);
 }
 
 h2 {
@@ -100,9 +102,17 @@ article {
    background-color: red;
    text-decoration: underline;
    transition: all .5s;
+   transform: translate(0, 3px) rotateY(360deg);
 }
 
-/* IMAGENES */
+/* IMAGENES y MAIN*/
+#main{
+   background-image: radial-gradient(rgb(246, 249, 1), rgb(202, 108, 16))
+}
+
+
+
+
 .main__todasimg {
    display: grid;
    grid-template-columns: 1fr;
@@ -144,7 +154,7 @@ article {
 
 .piccoloimg {
    grid-area: piccoloimg;
-   background-image: url(../recursos/picolo-inicio.jpg);
+   background-image: url(../recursos/piccolo-inicio.webp);
    background-size: cover;
    color: rgb(136, 195, 79);
 }
