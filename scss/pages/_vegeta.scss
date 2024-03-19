@@ -1,0 +1,53 @@
+.todovegeta {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(5, 500px);
+    grid-template-areas:
+       "vegeta-parado"
+       "vegeta-vs-goku"
+       "vegeta-vs-broly"
+       "vegeta-vs-cell"
+       "vegeta-vs-freezer"
+    ;
+    max-width: 1000px;
+    margin: auto;
+ }
+ .vegeta-parado {
+    grid-area: vegeta-parado;
+    background-image: url(../recursos/vegeta-parado.webp);
+    background-size: cover;
+ }
+ 
+ 
+ .vegeta-vs-goku {
+    grid-area: vegeta-vs-goku;
+    background-image: url(../recursos/vegeta-vs-goku.webp);
+    background-size: cover;
+ }
+ .vegeta-vs-broly {
+    grid-area: vegeta-vs-broly;
+    background-image: url(../recursos/vegeta-vs-brolyjpg.jpg);
+    background-size: cover;
+ }
+ .vegeta-vs-cell {
+    grid-area: vegeta-vs-cell;
+    background-image: url(../recursos/vegeta-vs-cell.png);
+    background-size: cover;
+ }
+ .vegeta-vs-freezer {
+    grid-area: vegeta-vs-freezer;
+    background-image: url(../recursos/vegeta-vs-freezer.avif);
+    background-size: cover;
+ }
+
+ @media (min-width: 597px) {
+   .todovegeta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 350px);
+      grid-template-rows: repeat(2, 350px);
+      grid-template-areas:
+         "vegeta-vs-goku vegeta-parado vegeta-vs-broly"
+         "vegeta-vs-cell vegeta-parado vegeta-vs-freezer";
+   }
+}

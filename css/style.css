@@ -1,408 +1,297 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&family=Rubik+Burned&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&family=Rubik+Burned&family=Sigmar&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&family=Rubik+Burned&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&family=Rubik+Burned&family=Sigmar&display=swap");
 * {
-   margin: 0;
-   padding: 0;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 img {
-   width: 100%;
-   height: 100%;
-}
+  width: 100%;
+  height: 100%; }
 
-#header{
-   background-image: linear-gradient(rgb(246, 249, 1), rgb(202, 108, 16));
-} 
+#header {
+  background-image: linear-gradient(#f6f901, #ca6c10); }
+  #header .navegacion {
+    background-image: url(https://i.pinimg.com/originals/82/c5/86/82c5865e1d0c1c7fa58a2cec54766b15.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    #header .navegacion img {
+      height: 250px; }
+    #header .navegacion ul {
+      margin: auto;
+      margin-bottom: 0;
+      padding: 20px;
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(255, 228, 196, 0.275);
+      box-shadow: 6px 0px 20px 4px black;
+      background-image: radial-gradient(rgba(255, 255, 0, 0.467), rgba(255, 0, 0, 0.484)); }
+      #header .navegacion ul li {
+        margin: 0 80px; }
+        #header .navegacion ul li:hover {
+          background-color: red;
+          text-decoration: underline;
+          transition: all .5s;
+          transform: translate(0, 3px) rotateY(360deg); }
 
 h1 {
-   color: rgb(203, 0, 12);
-   font-family: "Sigmar", sans-serif;
-   text-transform: uppercase;
-   text-align: center;
-   border: 2px solid black;
-   margin: 15px;
-   background-image: linear-gradient(rgb(246, 249, 1), rgb(202, 108, 16));
-}
+  color: #cb000c;
+  font-family: "Sigmar", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid black;
+  margin: 15px;
+  background-image: linear-gradient(#f6f901, #ca6c10); }
 
 .titulo {
-   background-color: yellow;
-   color: red;
-   font-family: "Sigmar", sans-serif;
-   text-transform: uppercase;
-   text-align: center;
-   border: 2px solid black;
-   margin: 15px;
-}
-
-
-section p {
-   color: rgba(255, 255, 0, 0.833);
-   font-family: "Sigmar", sans-serif;
-   font-size: 14px;
-   background-color: rgb(203, 0, 12);
-   text-align: center;
-   margin: 10px;
-}
+  background-color: yellow;
+  color: red;
+  font-family: "Sigmar", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid black;
+  margin: 15px; }
 
 a {
-   text-decoration: none;
-   color: rgb(10, 10, 10);
-}
+  text-decoration: none;
+  color: #0a0a0a; }
+  a:hover {
+    color: yellow;
+    transition: all .3s;
+    transform: rotate(360deg);
+    transform: rotateY(360deg); }
 
-a:hover {
-   color: yellow;
-   transition: all .3s;
-   /* transform: translate(0, 5px); */
-   transform: rotateY(360deg);
-}
+@media (min-width: 400px) {
+  .navegacion ul {
+    width: 90%;
+    justify-content: center; } }
+
+#main {
+  background-image: radial-gradient(#f6f901, #ca6c10); }
+
+section p {
+  color: rgba(255, 255, 0, 0.833);
+  font-family: "Sigmar", sans-serif;
+  font-size: 14px;
+  background-color: #cb000c;
+  text-align: center;
+  margin: 10px; }
 
 h2 {
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   text-align: center;
-   animation-name: animado;
-   animation-duration: 3s;
-   animation-iteration-count: infinite;
-   animation-timing-function: ease-in-out;
-}
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  animation-name: animado;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
 
 article {
-   border: 2px solid black;
-   margin: 10px;
-   padding: 10px;
-}
-
-
-/* NAVEGACION */
-.navegacion {
-   background-image: url(https://i.pinimg.com/originals/82/c5/86/82c5865e1d0c1c7fa58a2cec54766b15.jpg);
-   background-size: cover;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.navegacion img {
-   height: 250px;
-}
-
-.navegacion ul {
-   margin: auto;
-   margin-bottom: 0;
-   padding: 20px;
-   display: flex;
-   list-style: none;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-items: center;
-   background-color: rgba(255, 228, 196, 0.275);
-   box-shadow: 6px 0px 20px 4px black;
-   background-image: radial-gradient(rgba(255, 255, 0, 0.467), rgba(255, 0, 0, 0.484));
-}
-
-.navegacion ul li {
-   margin: 0 80px;
-
-}
-
-.navegacion ul li:hover {
-   background-color: red;
-   text-decoration: underline;
-   transition: all .5s;
-   transform: translate(0, 3px) rotateY(360deg);
-}
-
-/* IMAGENES y MAIN*/
-#main {
-   background-image: radial-gradient(rgb(246, 249, 1), rgb(202, 108, 16))
-}
-
-.todomaps .formulario form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
-.todomaps .formulario form input {
-   border-radius: 5px;
-   padding: 10px;
-   margin: 10px;
-   transition: .3s ease-in-out;
-}
-
-.todomaps .formulario form input:focus {
-   background-color: rgba(255, 0, 0, 0.484);
-   text-align: center;
-   transform: scale(1.07);
-}
-
-.todomaps .mapa-uno {
-   animation: animados 5s infinite;
-}
-
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px; }
 
 .main__todasimg {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(8, 400px);
-   grid-template-areas:
-      "gokuimg"
-      "vegetaimg"
-      "gohanimg"
-      "piccoloimg"
-      "brolyimg"
-      "cellimg"
-      "freezerimg"
-      "majinbooimg"
-   ;
-   max-width: 1000px;
-   margin: auto;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 400px);
+  grid-template-areas: "gokuimg" "vegetaimg" "gohanimg" "piccoloimg" "brolyimg" "cellimg" "freezerimg" "majinbooimg";
+  max-width: 1000px;
+  margin: auto; }
 
 .gokuimg {
-   grid-area: gokuimg;
-   background-image: url(../recursos/goku-transpa.png);
-   background-size: cover;
-   color: rgb(7, 31, 55);
-}
+  grid-area: gokuimg;
+  background-image: url(../recursos/goku-transpa.png);
+  background-size: cover;
+  color: #071f37; }
 
 .vegetaimg {
-   grid-area: vegetaimg;
-   background-image: url(../recursos/vegeta-transpa.webp);
-   background-size: cover;
-   color: rgb(2, 27, 63);
-}
+  grid-area: vegetaimg;
+  background-image: url(../recursos/vegeta-transpa.webp);
+  background-size: cover;
+  color: #021b3f; }
 
 .gohanimg {
-   grid-area: gohanimg;
-   background-image: url(../recursos/gohan-transpa.webp);
-   background-size: cover;
-   color: rgb(174, 55, 177);
-}
+  grid-area: gohanimg;
+  background-image: url(../recursos/gohan-transpa.webp);
+  background-size: cover;
+  color: #ae37b1; }
 
 .piccoloimg {
-   grid-area: piccoloimg;
-   background-image: url(../recursos/piccolo-inicio.webp);
-   background-size: cover;
-   color: rgb(136, 195, 79);
-}
+  grid-area: piccoloimg;
+  background-image: url(../recursos/piccolo-inicio.webp);
+  background-size: cover;
+  color: #88c34f; }
 
 .brolyimg {
-   grid-area: brolyimg;
-   background-image: url(../recursos/broly-transpa.png);
-   background-size: cover;
-   color: rgb(2, 2, 2);
-}
+  grid-area: brolyimg;
+  background-image: url(../recursos/broly-transpa.png);
+  background-size: cover;
+  color: #020202; }
 
 .majinbooimg {
-   grid-area: majinbooimg;
-   background-image: url(../recursos/majinboo-transpa.webp);
-   background-size: cover;
-   color: rgb(240, 21, 120);
-}
+  grid-area: majinbooimg;
+  background-image: url(../recursos/majinboo-transpa.webp);
+  background-size: cover;
+  color: #f01578; }
 
 .cellimg {
-   grid-area: cellimg;
-   background-image: url(../recursos/cell-transpa.webp);
-   background-size: cover;
-   color: rgb(109, 154, 29);
-}
+  grid-area: cellimg;
+  background-image: url(../recursos/cell-transpa.webp);
+  background-size: cover;
+  color: #6d9a1d; }
 
 .freezerimg {
-   grid-area: freezerimg;
-   background-image: url(../recursos/freezer-transpa.png);
-   background-size: cover;
-   color: rgb(130, 79, 169)
-}
+  grid-area: freezerimg;
+  background-image: url(../recursos/freezer-transpa.png);
+  background-size: cover;
+  color: #824fa9; }
 
-/* PAGINA DE GOKU */
+@media (min-width: 597px) {
+  .main__todasimg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 350px);
+    grid-template-rows: repeat(3, 350px);
+    grid-template-areas: "gokuimg gokuimg vegetaimg gohanimg" "gokuimg gokuimg piccoloimg brolyimg" "cellimg freezerimg freezerimg majinbooimg"; } }
+
+#footer {
+  background-image: linear-gradient(#f6f901, #ca6c10); }
+
+.todomaps .formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.todomaps .formulario form input {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  transition: .3s ease-in-out; }
+
+.todomaps .formulario form input:focus {
+  background-color: rgba(255, 0, 0, 0.484);
+  text-align: center;
+  transform: scale(1.07); }
+
+.todomaps .mapa-uno {
+  animation: animados 5s infinite; }
+
 .ancho-650 {
-   max-width: 750px;
-   margin: auto;
-}
-
-/* PAGINA DE VEGETA */
-
-.todovegeta {
-   display: grid;
-   grid-template-columns: 2fr;
-   grid-template-rows: repeat(5, 500px);
-   grid-template-areas:
-      "vegeta-parado"
-      "vegeta-vs-goku"
-      "vegeta-vs-broly"
-      "vegeta-vs-cell"
-      "vegeta-vs-freezer"
-
-   ;
-   max-width: 1000px;
-   margin: auto;
-}
-
-.vegeta-parado {
-   grid-area: vegeta-parado;
-   background-image: url(../recursos/vegeta-parado.webp);
-   background-size: cover;
-}
-
-
-.vegeta-vs-goku {
-   grid-area: vegeta-vs-goku;
-   background-image: url(../recursos/vegeta-vs-goku.webp);
-   background-size: cover;
-}
-
-.vegeta-vs-broly {
-   grid-area: vegeta-vs-broly;
-   background-image: url(../recursos/vegeta-vs-brolyjpg.jpg);
-   background-size: cover;
-}
-
-.vegeta-vs-cell {
-   grid-area: vegeta-vs-cell;
-   background-image: url(../recursos/vegeta-vs-cell.png);
-   background-size: cover;
-}
-
-.vegeta-vs-freezer {
-   grid-area: vegeta-vs-freezer;
-   background-image: url(../recursos/vegeta-vs-freezer.avif);
-   background-size: cover;
-}
-
-
-/* PAGINA DE GOHAN */
+  max-width: 750px;
+  margin: auto; }
 
 .todogohan {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(6, 350px);
-   grid-template-areas:
-      "gohan-bestia"
-      "gohan-boo"
-      "gohan-cell"
-      "gohan-freezer"
-      "gohan-pequeño"
-      "gohan-del-futuro"
-
-   ;
-   max-width: 1000px;
-   margin: auto;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 350px);
+  grid-template-areas: "gohan-bestia" "gohan-boo" "gohan-cell" "gohan-freezer" "gohan-pequeño" "gohan-del-futuro";
+  max-width: 1000px;
+  margin: auto; }
 
 .gohan-bestia {
-   grid-area: gohan-bestia;
-
-}
+  grid-area: gohan-bestia; }
 
 .gohan-boo {
-   grid-area: gohan-boo;
-}
+  grid-area: gohan-boo; }
 
 .gohan-cell {
-   grid-area: gohan-cell;
-}
+  grid-area: gohan-cell; }
 
 .gohan-freezer {
-   grid-area: gohan-freezer;
-}
+  grid-area: gohan-freezer; }
 
 .gohan-pequeño {
-   grid-area: gohan-pequeño;
-}
+  grid-area: gohan-pequeño; }
 
 .gohan-del-futuro {
-   grid-area: gohan-del-futuro;
-}
+  grid-area: gohan-del-futuro; }
 
+@media (min-width: 597px) {
+  .todogohan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "gohan-bestia gohan-freezer gohan-pequeño" "gohan-boo gohan-cell gohan-del-futuro"; } }
 
+.todovegeta {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(5, 500px);
+  grid-template-areas: "vegeta-parado" "vegeta-vs-goku" "vegeta-vs-broly" "vegeta-vs-cell" "vegeta-vs-freezer";
+  max-width: 1000px;
+  margin: auto; }
+
+.vegeta-parado {
+  grid-area: vegeta-parado;
+  background-image: url(../recursos/vegeta-parado.webp);
+  background-size: cover; }
+
+.vegeta-vs-goku {
+  grid-area: vegeta-vs-goku;
+  background-image: url(../recursos/vegeta-vs-goku.webp);
+  background-size: cover; }
+
+.vegeta-vs-broly {
+  grid-area: vegeta-vs-broly;
+  background-image: url(../recursos/vegeta-vs-brolyjpg.jpg);
+  background-size: cover; }
+
+.vegeta-vs-cell {
+  grid-area: vegeta-vs-cell;
+  background-image: url(../recursos/vegeta-vs-cell.png);
+  background-size: cover; }
+
+.vegeta-vs-freezer {
+  grid-area: vegeta-vs-freezer;
+  background-image: url(../recursos/vegeta-vs-freezer.avif);
+  background-size: cover; }
+
+@media (min-width: 597px) {
+  .todovegeta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 350px);
+    grid-template-rows: repeat(2, 350px);
+    grid-template-areas: "vegeta-vs-goku vegeta-parado vegeta-vs-broly" "vegeta-vs-cell vegeta-parado vegeta-vs-freezer"; } }
 
 @keyframes animado {
-   0%{
-      transform: scale(1);
-   }
-   50%{
-      transform: scale(1.3);
-   }
-   100%{
-      transform: scale(1);
-   }
-}
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
 
 @keyframes animados {
-   0%{
-      background-color: rgb(143, 83, 23);
-      color: white;
-      text-decoration: underline;
-   }
-   20%{
-      background-color: rgb(170, 96, 22);
-      color: white;
-      text-decoration: underline;
-   }
-   40%{
-      background-color: rgb(201, 119, 38);
-      color: white;
-      text-decoration: underline;
-   }
-   60%{
-      background-color: rgb(211, 119, 26);
-      color: white;
-      text-decoration: underline;
-   }
-   80%{
-      background-color: rgb(230, 123, 17);
-      color: white;
-      text-decoration: underline;
-   }
-   100%{
-      background-color: rgb(255, 128, 0);
-      color: white;
-      text-decoration: underline;
-   }
-}
-
-
-
-@media (min-width:400px) {
-   .navegacion ul {
-      width: 90%;
-      justify-content: center;
-   }
-}
-
-@media (min-width: 597px) {
-   .main__todasimg {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 350px);
-      grid-template-areas:
-         "gokuimg gokuimg vegetaimg gohanimg"
-         "gokuimg gokuimg piccoloimg brolyimg"
-         "cellimg freezerimg freezerimg majinbooimg";
-   }
-}
-
-@media (min-width: 597px) {
-   .todovegeta {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 350px);
-      grid-template-areas:
-         "vegeta-vs-goku vegeta-parado vegeta-vs-broly"
-         "vegeta-vs-cell vegeta-parado vegeta-vs-freezer";
-   }
-}
-
-@media (min-width: 597px) {
-   .todogohan {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-         "gohan-bestia gohan-freezer gohan-pequeño"
-         "gohan-boo gohan-cell gohan-del-futuro";
-   }
-}
+  0% {
+    background-color: #8f5317;
+    color: white;
+    text-decoration: underline; }
+  20% {
+    background-color: #aa6016;
+    color: white;
+    text-decoration: underline; }
+  40% {
+    background-color: #c97726;
+    color: white;
+    text-decoration: underline; }
+  60% {
+    background-color: #d3771a;
+    color: white;
+    text-decoration: underline; }
+  80% {
+    background-color: #e67b11;
+    color: white;
+    text-decoration: underline; }
+  100% {
+    background-color: #ff8000;
+    color: white;
+    text-decoration: underline; } }

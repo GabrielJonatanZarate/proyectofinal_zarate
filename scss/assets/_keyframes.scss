@@ -1,0 +1,45 @@
+@keyframes animado {
+    0%{
+       transform: scale(1);
+    }
+    50%{
+       transform: scale(1.3);
+    }
+    100%{
+       transform: scale(1);
+    }
+ }
+ 
+ @keyframes animados {
+    0%{
+       background-color: rgb(143, 83, 23);
+       color: white;
+       text-decoration: underline;
+    }
+    20%{
+       background-color: rgb(170, 96, 22);
+       color: white;
+       text-decoration: underline;
+    }
+    40%{
+       background-color: rgb(201, 119, 38);
+       color: white;
+       text-decoration: underline;
+    }
+    60%{
+       background-color: rgb(211, 119, 26);
+       color: white;
+       text-decoration: underline;
+    }
+    80%{
+       background-color: rgb(230, 123, 17);
+       color: white;
+       text-decoration: underline;
+    }
+    100%{
+       background-color: rgb(255, 128, 0);
+       color: white;
+       text-decoration: underline;
+    }
+ }
+ 
