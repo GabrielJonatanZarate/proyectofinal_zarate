@@ -12,6 +12,14 @@ img {
 
 #header {
   background-image: linear-gradient(#f6f901, #ca6c10); }
+  #header h1 {
+    color: #cb000c;
+    font-family: "Sigmar", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid black;
+    margin: 15px;
+    background-image: linear-gradient(#f6f901, #ca6c10); }
   #header .navegacion {
     background-image: url(https://i.pinimg.com/originals/82/c5/86/82c5865e1d0c1c7fa58a2cec54766b15.jpg);
     background-size: cover;
@@ -20,6 +28,14 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
+    #header .navegacion a {
+      text-decoration: none;
+      color: #0a0a0a; }
+      #header .navegacion a:hover {
+        color: yellow;
+        transition: all .3s;
+        transform: rotate(360deg);
+        transform: rotateY(360deg); }
     #header .navegacion img {
       height: 250px; }
     #header .navegacion ul {
@@ -31,6 +47,7 @@ img {
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
+      text-align: center;
       background-color: rgba(255, 228, 196, 0.275);
       box-shadow: 6px 0px 20px 4px black;
       background-image: radial-gradient(rgba(255, 255, 0, 0.467), rgba(255, 0, 0, 0.484)); }
@@ -41,129 +58,101 @@ img {
           text-decoration: underline;
           transition: all .5s;
           transform: translate(0, 3px) rotateY(360deg); }
-
-h1 {
-  color: #cb000c;
-  font-family: "Sigmar", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  border: 2px solid black;
-  margin: 15px;
-  background-image: linear-gradient(#f6f901, #ca6c10); }
-
-.titulo {
-  background-color: yellow;
-  color: red;
-  font-family: "Sigmar", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  border: 2px solid black;
-  margin: 15px; }
-
-a {
-  text-decoration: none;
-  color: #0a0a0a; }
-  a:hover {
-    color: yellow;
-    transition: all .3s;
-    transform: rotate(360deg);
-    transform: rotateY(360deg); }
-
-@media (min-width: 400px) {
-  .navegacion ul {
-    width: 90%;
-    justify-content: center; } }
+  @media (min-width: 400px) {
+    #header .navegacion ul {
+      width: 90%;
+      justify-content: center; } }
 
 #main {
   background-image: radial-gradient(#f6f901, #ca6c10); }
-
-section p {
-  color: rgba(255, 255, 0, 0.833);
-  font-family: "Sigmar", sans-serif;
-  font-size: 14px;
-  background-color: #cb000c;
-  text-align: center;
-  margin: 10px; }
-
-h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  animation-name: animado;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
-
-article {
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px; }
-
-.main__todasimg {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 400px);
-  grid-template-areas: "gokuimg" "vegetaimg" "gohanimg" "piccoloimg" "brolyimg" "cellimg" "freezerimg" "majinbooimg";
-  max-width: 1000px;
-  margin: auto; }
-
-.gokuimg {
-  grid-area: gokuimg;
-  background-image: url(../recursos/goku-transpa.png);
-  background-size: cover;
-  color: #071f37; }
-
-.vegetaimg {
-  grid-area: vegetaimg;
-  background-image: url(../recursos/vegeta-transpa.webp);
-  background-size: cover;
-  color: #021b3f; }
-
-.gohanimg {
-  grid-area: gohanimg;
-  background-image: url(../recursos/gohan-transpa.webp);
-  background-size: cover;
-  color: #ae37b1; }
-
-.piccoloimg {
-  grid-area: piccoloimg;
-  background-image: url(../recursos/piccolo-inicio.webp);
-  background-size: cover;
-  color: #88c34f; }
-
-.brolyimg {
-  grid-area: brolyimg;
-  background-image: url(../recursos/broly-transpa.png);
-  background-size: cover;
-  color: #020202; }
-
-.majinbooimg {
-  grid-area: majinbooimg;
-  background-image: url(../recursos/majinboo-transpa.webp);
-  background-size: cover;
-  color: #f01578; }
-
-.cellimg {
-  grid-area: cellimg;
-  background-image: url(../recursos/cell-transpa.webp);
-  background-size: cover;
-  color: #6d9a1d; }
-
-.freezerimg {
-  grid-area: freezerimg;
-  background-image: url(../recursos/freezer-transpa.png);
-  background-size: cover;
-  color: #824fa9; }
-
-@media (min-width: 597px) {
-  .main__todasimg {
+  #main section p {
+    color: rgba(255, 255, 0, 0.833);
+    font-family: "Sigmar", sans-serif;
+    font-size: 14px;
+    background-color: #cb000c;
+    text-align: center;
+    margin: 10px; }
+  #main .main__todasimg {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 350px);
-    grid-template-rows: repeat(3, 350px);
-    grid-template-areas: "gokuimg gokuimg vegetaimg gohanimg" "gokuimg gokuimg piccoloimg brolyimg" "cellimg freezerimg freezerimg majinbooimg"; } }
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 400px);
+    grid-template-areas: "gokuimg" "vegetaimg" "gohanimg" "piccoloimg" "brolyimg" "cellimg" "freezerimg" "majinbooimg";
+    max-width: 1000px;
+    margin: auto; }
+    #main .main__todasimg article {
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px; }
+      #main .main__todasimg article h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        animation-name: animado;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out; }
+    #main .main__todasimg .gokuimg {
+      grid-area: gokuimg;
+      background-image: url(../recursos/goku-transpa.png);
+      background-size: cover;
+      color: #237ad0;
+      background-position: center; }
+    #main .main__todasimg .vegetaimg {
+      grid-area: vegetaimg;
+      background-image: url(../recursos/vegeta-transpa.webp);
+      background-size: cover;
+      color: #021b3f;
+      background-position: center; }
+    #main .main__todasimg .gohanimg {
+      grid-area: gohanimg;
+      background-image: url(../recursos/gohan-transpa.webp);
+      background-size: cover;
+      color: #ae37b1;
+      background-position: center; }
+    #main .main__todasimg .piccoloimg {
+      grid-area: piccoloimg;
+      background-image: url(../recursos/piccolo-inicio.webp);
+      background-size: cover;
+      color: #88c34f;
+      background-position: center; }
+    #main .main__todasimg .brolyimg {
+      grid-area: brolyimg;
+      background-image: url(../recursos/broly-transpa.png);
+      background-size: cover;
+      color: #020202;
+      background-position: center; }
+    #main .main__todasimg .majinbooimg {
+      grid-area: majinbooimg;
+      background-image: url(../recursos/majinboo-transpa.webp);
+      background-size: cover;
+      color: #f01578; }
+    #main .main__todasimg .cellimg {
+      grid-area: cellimg;
+      background-image: url(../recursos/cell-transpa.webp);
+      background-size: cover;
+      color: #6d9a1d; }
+    #main .main__todasimg .freezerimg {
+      grid-area: freezerimg;
+      background-image: url(../recursos/freezer-transpa.png);
+      background-size: cover;
+      color: #8a00f4; }
+  @media (min-width: 597px) {
+    #main .main__todasimg {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(8, 350px);
+      grid-template-rows: repeat(3, 350px);
+      grid-template-areas: "gokuimg gokuimg vegetaimg gohanimg" "gokuimg gokuimg piccoloimg brolyimg" "cellimg freezerimg freezerimg majinbooimg"; } }
 
 #footer {
-  background-image: linear-gradient(#f6f901, #ca6c10); }
+  background-image: linear-gradient(#f6f901, #ca6c10);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  #footer h3 {
+    background-color: rgba(13, 13, 13, 0.771);
+    color: #f6f901; }
+    #footer h3:hover {
+      background-color: red; }
 
 .todomaps .formulario form {
   display: flex;
@@ -195,24 +184,22 @@ article {
   grid-template-areas: "gohan-bestia" "gohan-boo" "gohan-cell" "gohan-freezer" "gohan-pequeño" "gohan-del-futuro";
   max-width: 1000px;
   margin: auto; }
-
-.gohan-bestia {
-  grid-area: gohan-bestia; }
-
-.gohan-boo {
-  grid-area: gohan-boo; }
-
-.gohan-cell {
-  grid-area: gohan-cell; }
-
-.gohan-freezer {
-  grid-area: gohan-freezer; }
-
-.gohan-pequeño {
-  grid-area: gohan-pequeño; }
-
-.gohan-del-futuro {
-  grid-area: gohan-del-futuro; }
+  .todogohan article {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px; }
+  .todogohan .gohan-bestia {
+    grid-area: gohan-bestia; }
+  .todogohan .gohan-boo {
+    grid-area: gohan-boo; }
+  .todogohan .gohan-cell {
+    grid-area: gohan-cell; }
+  .todogohan .gohan-freezer {
+    grid-area: gohan-freezer; }
+  .todogohan .gohan-pequeño {
+    grid-area: gohan-pequeño; }
+  .todogohan .gohan-del-futuro {
+    grid-area: gohan-del-futuro; }
 
 @media (min-width: 597px) {
   .todogohan {
@@ -228,37 +215,39 @@ article {
   grid-template-areas: "vegeta-parado" "vegeta-vs-goku" "vegeta-vs-broly" "vegeta-vs-cell" "vegeta-vs-freezer";
   max-width: 1000px;
   margin: auto; }
-
-.vegeta-parado {
-  grid-area: vegeta-parado;
-  background-image: url(../recursos/vegeta-parado.webp);
-  background-size: cover; }
-
-.vegeta-vs-goku {
-  grid-area: vegeta-vs-goku;
-  background-image: url(../recursos/vegeta-vs-goku.webp);
-  background-size: cover; }
-
-.vegeta-vs-broly {
-  grid-area: vegeta-vs-broly;
-  background-image: url(../recursos/vegeta-vs-brolyjpg.jpg);
-  background-size: cover; }
-
-.vegeta-vs-cell {
-  grid-area: vegeta-vs-cell;
-  background-image: url(../recursos/vegeta-vs-cell.png);
-  background-size: cover; }
-
-.vegeta-vs-freezer {
-  grid-area: vegeta-vs-freezer;
-  background-image: url(../recursos/vegeta-vs-freezer.avif);
-  background-size: cover; }
+  .todovegeta article {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px; }
+  .todovegeta .vegeta-parado {
+    grid-area: vegeta-parado;
+    background-image: url(../recursos/vegeta-parado.webp);
+    background-size: cover; }
+  .todovegeta .vegeta-vs-goku {
+    grid-area: vegeta-vs-goku;
+    background-image: url(../recursos/vegeta-vs-goku.webp);
+    background-size: cover;
+    background-position: center; }
+  .todovegeta .vegeta-vs-broly {
+    grid-area: vegeta-vs-broly;
+    background-image: url(../recursos/vegeta-vs-brolyjpg.jpg);
+    background-size: cover;
+    background-position: center; }
+  .todovegeta .vegeta-vs-cell {
+    grid-area: vegeta-vs-cell;
+    background-image: url(../recursos/vegeta-vs-cell.png);
+    background-size: cover;
+    background-position: center; }
+  .todovegeta .vegeta-vs-freezer {
+    grid-area: vegeta-vs-freezer;
+    background-image: url(../recursos/vegeta-vs-freezer.avif);
+    background-size: cover;
+    background-position: center; }
 
 @media (min-width: 597px) {
   .todovegeta {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 350px);
     grid-template-rows: repeat(2, 350px);
     grid-template-areas: "vegeta-vs-goku vegeta-parado vegeta-vs-broly" "vegeta-vs-cell vegeta-parado vegeta-vs-freezer"; } }
 

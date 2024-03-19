@@ -12,28 +12,32 @@
     ;
     max-width: 1000px;
     margin: auto;
+    article {
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px;
+   }
+    .gohan-bestia {
+       grid-area: gohan-bestia;
+    }
+    
+    .gohan-boo {
+       grid-area: gohan-boo;
+    }
+    .gohan-cell {
+       grid-area: gohan-cell;
+    }
+    .gohan-freezer {
+       grid-area: gohan-freezer;
+    }
+    .gohan-pequeño {
+       grid-area: gohan-pequeño;
+    }
+    .gohan-del-futuro {
+       grid-area: gohan-del-futuro;
+    }
  }
  
- .gohan-bestia {
-    grid-area: gohan-bestia;
- 
- }
- 
- .gohan-boo {
-    grid-area: gohan-boo;
- }
- .gohan-cell {
-    grid-area: gohan-cell;
- }
- .gohan-freezer {
-    grid-area: gohan-freezer;
- }
- .gohan-pequeño {
-    grid-area: gohan-pequeño;
- }
- .gohan-del-futuro {
-    grid-area: gohan-del-futuro;
- }
 
 
  @media (min-width: 597px) {
