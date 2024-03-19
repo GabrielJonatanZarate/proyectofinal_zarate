@@ -11,6 +11,10 @@ img {
    height: 100%;
 }
 
+#header{
+   background-image: linear-gradient(rgb(246, 249, 1), rgb(202, 108, 16));
+} 
+
 h1 {
    color: rgb(203, 0, 12);
    font-family: "Sigmar", sans-serif;
@@ -50,11 +54,16 @@ a:hover {
    color: yellow;
    transition: all .3s;
    /* transform: translate(0, 5px); */
-   transform: rotate(360deg);
+   transform: rotateY(360deg);
 }
 
 h2 {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+   animation-name: animado;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
 }
 
 article {
@@ -106,11 +115,32 @@ article {
 }
 
 /* IMAGENES y MAIN*/
-#main{
+#main {
    background-image: radial-gradient(rgb(246, 249, 1), rgb(202, 108, 16))
 }
 
+.todomaps .formulario form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
+.todomaps .formulario form input {
+   border-radius: 5px;
+   padding: 10px;
+   margin: 10px;
+   transition: .3s ease-in-out;
+}
+
+.todomaps .formulario form input:focus {
+   background-color: rgba(255, 0, 0, 0.484);
+   text-align: center;
+   transform: scale(1.07);
+}
+
+.todomaps .mapa-uno {
+   animation: animados 5s infinite;
+}
 
 
 .main__todasimg {
@@ -217,6 +247,7 @@ article {
    background-size: cover;
 }
 
+
 .vegeta-vs-goku {
    grid-area: vegeta-vs-goku;
    background-image: url(../recursos/vegeta-vs-goku.webp);
@@ -263,6 +294,7 @@ article {
 
 .gohan-bestia {
    grid-area: gohan-bestia;
+
 }
 
 .gohan-boo {
@@ -287,6 +319,52 @@ article {
 
 
 
+@keyframes animado {
+   0%{
+      transform: scale(1);
+   }
+   50%{
+      transform: scale(1.3);
+   }
+   100%{
+      transform: scale(1);
+   }
+}
+
+@keyframes animados {
+   0%{
+      background-color: rgb(143, 83, 23);
+      color: white;
+      text-decoration: underline;
+   }
+   20%{
+      background-color: rgb(170, 96, 22);
+      color: white;
+      text-decoration: underline;
+   }
+   40%{
+      background-color: rgb(201, 119, 38);
+      color: white;
+      text-decoration: underline;
+   }
+   60%{
+      background-color: rgb(211, 119, 26);
+      color: white;
+      text-decoration: underline;
+   }
+   80%{
+      background-color: rgb(230, 123, 17);
+      color: white;
+      text-decoration: underline;
+   }
+   100%{
+      background-color: rgb(255, 128, 0);
+      color: white;
+      text-decoration: underline;
+   }
+}
+
+
 
 @media (min-width:400px) {
    .navegacion ul {
@@ -299,7 +377,7 @@ article {
    .main__todasimg {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(8, 350px);
+      grid-template-rows: repeat(3, 350px);
       grid-template-areas:
          "gokuimg gokuimg vegetaimg gohanimg"
          "gokuimg gokuimg piccoloimg brolyimg"
@@ -311,7 +389,7 @@ article {
    .todovegeta {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 350px);
+      grid-template-rows: repeat(2, 350px);
       grid-template-areas:
          "vegeta-vs-goku vegeta-parado vegeta-vs-broly"
          "vegeta-vs-cell vegeta-parado vegeta-vs-freezer";
@@ -328,4 +406,3 @@ article {
          "gohan-boo gohan-cell gohan-del-futuro";
    }
 }
-
